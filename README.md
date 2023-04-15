@@ -1,12 +1,18 @@
 # Variable-Selection-for-SAE
 This code is a research study of variable selection under the Small Area Estimation. 
+
 Research project under my Master in Statistics studies at Carleton university, Ottawa, Canada
-Abstract:
+
+## Abstract:
 This study investigates the effectiveness of a combined variable selection approach for nested-error regression (NER) models in small area estimation (SAE), by building upon the ideas of two main articles. Meza et al.(2005) proposed a variable selection procedure utilizing $C_p$ statistics, while Li et al. (2019) suggested a transformation for the response variable such that the NER model provides more flexibility of model fitting. The aim of this research project is to apply the transformation proposed by Li et al. to meet the assumption of NER models, then apply Meza et al.'s procedure for variable selection using Akaike information criterion (AIC) and Bayesian information criterion (BIC). The goal is to determine whether the combined approach is effective in selecting the most relevant predictors for the response variable.
+
 Variable selection is necessary for NER models with large numbers of predictors to avoid the curse of dimensionality. Meza et al.'s procedure involves fitting a series of models with increasing numbers of predictors and selecting the model with the lowest $C_p$ value. However, before applying the variable selecton procedure, the response variable must be transformed to meet the assumption of NER models. Li et al. proposed a transformation function that involves a tuning parameter $\lambda$ and it shows good properties and its inverse function is easier compared to previous proposed transformations. Moreover the proof of the consistency of the maximum likelihood method (MLE) of $\lambda$ is easier too.
+
 The proposed approach presented in this research project aims to address violations of the Nested Error Regression (NER) model assumptions by implementing the Li et al. transformation and selecting the optimal variables through the Meza and Lahiri variable selection procedure. When the assumptions of the NER model are violated, the estimates of the model parameters may be biased, leading to incorrect inferences. To overcome this issue, the Li et al. transformation is applied to the data to make the error terms more normally distributed. Subsequently, the Meza and Lahiri variable selection procedure is used to select the most appropriate variables for inclusion in the NER model. 
+
 To better understand the performance of the combined approach of Li et al. transformation and Meza and Lahiri variable selection procedure in addressing NER model violations, a simulation study was conducted. The simulation study involved generating datasets with known parameter values and varying levels of NER model violations. The datasets were then analyzed using the proposed approach, and the resulting parameter estimates and predictive accuracy were compared to those obtained using a naive approach such as Meza and Lahiri.
+
 In conclusion, this study demonstrates the effectiveness of a combined approach for variable selection in NER models for SAE, utilizing the transformation proposed by Li et al. and variable selection procedure proposed by Meza et al. using AIC and BIC. The approach can be applied to real-world data sets and has the potential to improve the performance of NER models in SAE. By investigating two main articles related to NER models and their variable selection procedures, this study contributes to the development of more effective and accurate methods for SAE.
 
-Key words: AIC, BIC, SAE, NER, transformation, variable selection
+### Key words: AIC, BIC, SAE, NER, transformation, variable selection
 
